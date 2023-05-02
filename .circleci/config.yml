@@ -1,11 +1,8 @@
-version: 2
+version: 2.1
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:10.16
-
     working_directory: ~/client
-
     steps:
       - checkout
       - restore_cache:
@@ -19,11 +16,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
   deploy:
-    machine:
-      enabled: true
-
     working_directory: ~/client
-
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -32,19 +25,21 @@ jobs:
       - run:
           name: Push Main to Production
           command: |
-            git push https://github.com/Kody-Eguchi/nourishd main:production
+            git checkout main
+            git pull
+            git checkout -b production
+            git push origin production
 
 workflows:
   version: 2
-  test_and_deploy:
+  test:
     jobs:
-      - build:
-          filters:
-            branches:
-              ignore: production
+      - build
+  deploy:
+    jobs:
       - deploy:
-          filters:
-            branches:
-              ignore: production
           requires:
             - build
+          filters:
+            branches:
+              only: main
