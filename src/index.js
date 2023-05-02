@@ -7,9 +7,10 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
-if (process.env.RAILS_APP_API_BASE_URL) {
-  axios.defaults.baseURL = process.env.RAILS_APP_API_BASE_URL;
-}
+// if (process.env.RAILS_APP_API_BASE_URL) {
+axios.defaults.baseURL = process.env.RAILS_APP_API_BASE_URL =
+  "https://nourishd-api-production.up.railway.app/";
+// }
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
