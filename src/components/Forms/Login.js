@@ -21,7 +21,7 @@ function Login(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const url = "http://localhost:4000/login";
+    const url = "/login";
 
     const requestData = {
       email: email,

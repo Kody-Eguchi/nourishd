@@ -5,7 +5,7 @@ const extractIdFromUri = (uri) => uri.split("#recipe_").pop();
 export const addToFavourites = async (name, uri) => {
   const queryName = name.split(" ").join("-");
   const normalizedQueryName = queryName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const axiosUrl = `http://localhost:4000/recipes/${normalizedQueryName}`;
+  const axiosUrl = `/recipes/${normalizedQueryName}`;
   const id = extractIdFromUri(uri);
   const requestData = { recipe_id: id };
   try {
@@ -22,7 +22,7 @@ export const addToFavourites = async (name, uri) => {
         ingredient_lines: ingredientLines,
       },
     };
-    const urlTwo = "http://localhost:4000/favourites";
+    const urlTwo = "/favourites";
     await axios.post(urlTwo, requestDataTwo, { withCredentials: true });
   } catch (error) {
     console.error("Error: " + error.message);

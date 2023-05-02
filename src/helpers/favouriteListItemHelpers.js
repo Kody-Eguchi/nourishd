@@ -2,7 +2,7 @@ import axios from "axios";
 
 async function addToMeal(props, showValue) {
   const queryName = props.title.split(" ").join("-");
-  const nutrientInfo = await axios.get(`http://localhost:4000/recipes/${queryName}`, {
+  const nutrientInfo = await axios.get(`/recipes/${queryName}`, {
     params: {
       recipe_id: props.recipe_id,
     },
@@ -62,12 +62,12 @@ async function addToMeal(props, showValue) {
     },
   };
 
-  await axios.post("http://localhost:4000/updateDayInfo", requestData, { withCredentials: true });
+  await axios.post("/updateDayInfo", requestData, { withCredentials: true });
   showValue();
 }
 
 async function removeFromFavourites(id, props) {
-  const url = `http://localhost:4000/favourites/${id}`;
+  const url = `/favourites/${id}`;
 
   try {
     const res = await axios.delete(url, { withCredentials: true });
@@ -80,7 +80,7 @@ async function removeFromFavourites(id, props) {
 
 async function fetchFavouriteRecipes(props) {
   try {
-    const res = await axios.get("http://localhost:4000/userFavourites", { withCredentials: true });
+    const res = await axios.get("/userFavourites", { withCredentials: true });
     props.setFavouriteRecipes(res.data.recipe);
   } catch (error) {
     console.log(error);

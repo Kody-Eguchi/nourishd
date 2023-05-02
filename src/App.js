@@ -20,7 +20,7 @@ function App() {
   const [password, setPassword] = useState("");
 
   const checkIfLoggedIn = async () => {
-    const url = "http://localhost:4000/userInfo";
+    const url = "/userInfo";
 
     try {
       const response = await axios.get(url, { withCredentials: true });

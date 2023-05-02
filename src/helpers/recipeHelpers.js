@@ -10,7 +10,7 @@ export const getRecipes = async (
   if (!query) return;
 
   try {
-    const response = await axios.get(`http://localhost:4000/recipes/${query}`);
+    const response = await axios.get(`/recipes/${query}`);
 
     if (response.data.hits) {
       setRecipes(response.data.hits);

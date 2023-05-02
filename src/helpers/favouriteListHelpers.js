@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function fetchFavouriteRecipes(setFavouriteRecipes) {
   try {
-    const response = await axios.get("http://localhost:4000/userFavourites", {
+    const response = await axios.get("/userFavourites", {
       withCredentials: true,
     });
     setFavouriteRecipes(response.data.recipe);

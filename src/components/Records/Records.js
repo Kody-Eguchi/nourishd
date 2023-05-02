@@ -39,7 +39,7 @@ function Records() {
   const [cholesterol, setCholesterol] = useState(0);
 
   const fetchDayData = async () => {
-    const url = "http://localhost:4000/dayInfo";
+    const url = "/dayInfo";
 
     try {
       const response = await axios.get(url, { withCredentials: true });

@@ -51,7 +51,7 @@ function Signup(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const url = "http://localhost:4000/users";
+    const url = "/users";
 
     const requestData = {
       user: {

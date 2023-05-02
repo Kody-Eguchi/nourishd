@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export async function addToMeal(props, showValue) {
-  const url = "http://localhost:4000/updateDayInfo";
+  const url = "/updateDayInfo";
 
   const extractIdFromUri = function (uri) {
     return uri.split("#recipe_").pop();

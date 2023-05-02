@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function removeMealFromTracker(name, id, triggerUpdate, fetchDayData) {
   const queryName = name.split(" ").join("-");
-  const url = `http://localhost:4000/recipes/${queryName}`;
+  const url = `/recipes/${queryName}`;
   const requestData = { recipe_id: id };
 
   try {
@@ -32,7 +32,7 @@ export async function removeMealFromTracker(name, id, triggerUpdate, fetchDayDat
       },
     };
 
-    const urlTwo = "http://localhost:4000/removeDayInfo";
+    const urlTwo = "/removeDayInfo";
     await axios.post(urlTwo, requestDataTwo, { withCredentials: true });
     triggerUpdate();
   } catch (error) {
@@ -43,7 +43,7 @@ export async function removeMealFromTracker(name, id, triggerUpdate, fetchDayDat
 }
 
 export async function fetchDayData(setMealsArr) {
-  const url = "http://localhost:4000/dayInfo";
+  const url = "/dayInfo";
 
   try {
     const response = await axios.get(url, { withCredentials: true });

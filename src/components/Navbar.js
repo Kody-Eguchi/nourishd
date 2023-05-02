@@ -16,7 +16,7 @@ function Navbar(props) {
   const logOut = async (e) => {
     e.preventDefault();
 
-    const url = "http://localhost:4000/logout";
+    const url = "/logout";
 
     const response = await axios.get(url, { withCredentials: true });
     try {

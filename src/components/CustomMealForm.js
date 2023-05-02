@@ -22,7 +22,7 @@ function CustomMealForm(props) {
       return;
     }
 
-    const url = "http://localhost:4000/addCustomMealNutrients";
+    const url = "/addCustomMealNutrients";
 
     const requestData = {
       day: {
