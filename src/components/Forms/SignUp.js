@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 import loginLogo from "../../img/login-logo.png";
 
@@ -232,9 +232,9 @@ function Signup(props) {
               )}
               <p>
                 Already have an account?{" "}
-                <a className="login-link" href="/login">
+                <Link className="login-link" to="/login">
                   Login
-                </a>
+                </Link>
               </p>
             </div>
           </form>

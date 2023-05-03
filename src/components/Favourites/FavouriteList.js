@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FavouriteListItem from "./FavouriteListItem";
 import { fetchFavouriteRecipes } from "../../helpers/favouriteListHelpers";
+import { Link } from "react-router-dom";
 
 function FavouriteList() {
   const [favouriteRecipes, setFavouriteRecipes] = useState([]);
@@ -42,9 +43,9 @@ function FavouriteList() {
           </div>
           <p className="no-favourite-message">
             Head over to the{" "}
-            <a className="recipes-link" href="/recipes">
+            <Link className="recipes-link" to="/recipes">
               recipes
-            </a>{" "}
+            </Link>{" "}
             tab to add some favourites and then come back to view them!
           </p>
         </div>
