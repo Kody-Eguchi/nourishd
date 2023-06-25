@@ -1,7 +1,11 @@
-## Developers
+# NourishD
 
-- Harsh Patel - [Github](https://github.com/hpatel1959) / [LinkedIn](https://www.linkedin.com/in/harsh-patel-69a7161b9/)
-- Koji Eguchi - [Github](https://github.com/Kody-Eguchi) / [LinkedIn](https://www.linkedin.com/in/kojieguchi/)
+## Applications Features
+
+- As a user, I want to be able to track my nutrient intake effectively.
+- As a user, I want to search for healthy meal recipes from a comprehensive database.
+- As a user, I want the ability to save my favorite recipes for future reference.
+- As a user, I want to be able to create a new account by signing up.
 
 ## Tech Stack
 
@@ -36,43 +40,6 @@
 
 - [Edamam](https://www.edamam.com/)
 
-## Applications Features
-
-- users can keep tracks of their nutrient intakes
-- users can serach healthy meal recipes from the database
-- users can favourite recipes
-- users can sign up to create a new account
-
-## Screenshots
-
-### Home (Desktop)
-
-![Home Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-home-desktop.png)
-
-### Home (Mobile)
-
-![Home Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-home-mobile.png)
-
-### Recipes (Desktop)
-
-![Recipes Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-recipes-desktop.png)
-
-### Recipes (Mobile)
-
-![Recipes Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-recipes-mobile.png)
-
-### Records (Desktop)
-
-![Records Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-tracker-desktop.png)
-
-### Records (Mobile)
-
-![Records Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-records-mobile.png)
-
-## Production URL Link
-
-[Click Here](https://nourishd.netlify.app/)
-
 ## Project Notes
 
 ### Project Objectives
@@ -106,3 +73,38 @@ To further enhance the project, we plan to implement the following improvements 
 - Practice TDD (Test Driven Development) using Cypress or RSpec.
 - Resolve browser-dependent issues (Safari browser currently does not allow Cross-Site Tracking).
 - Implement more secure authentication methods. Currently, bcrypt is used to hash passwords, but exploring stronger authentication options would be beneficial.
+
+## Screenshots
+
+### Home (Desktop)
+
+![Home Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-home-desktop.png)
+
+### Home (Mobile)
+
+![Home Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-home-mobile.png)
+
+### Recipes (Desktop)
+
+![Recipes Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-recipes-desktop.png)
+
+### Recipes (Mobile)
+
+![Recipes Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-recipes-mobile.png)
+
+### Records (Desktop)
+
+![Records Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-tracker-desktop.png)
+
+### Records (Mobile)
+
+![Records Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-records-mobile.png)
+
+## Production URL Link
+
+[Click Here](https://nourishd.netlify.app/)
+
+## Developers
+
+- Harsh Patel - [Github](https://github.com/hpatel1959) / [LinkedIn](https://www.linkedin.com/in/harsh-patel-69a7161b9/)
+- Koji Eguchi - [Github](https://github.com/Kody-Eguchi) / [LinkedIn](https://www.linkedin.com/in/kojieguchi/)
