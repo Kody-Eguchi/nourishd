@@ -1,5 +1,8 @@
 # NourishD
 
+![](https://github.com/Kody-Eguchi/nourishd/blob/main/docs/record.gif)
+![](https://github.com/Kody-Eguchi/nourishd/blob/main/docs/recipe.gif)
+
 ## Applications Features
 
 - As a user, I want to be able to track my nutrient intake effectively.
