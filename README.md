@@ -71,13 +71,13 @@
 
 ## Production URL Link
 
-![Click Here](https://nourishd.netlify.app/)
+[Click Here](https://nourishd.netlify.app/)
 
 ## Project Notes
 
 ### Project Objectives
 
-- Design and implement a relational data model using PostgreSQL (ERD Diagram Link).
+- Design and implement a relational data model using PostgreSQL [ERD Diagram Link](https://github.com/Kody-Eguchi/nourishd/blob/main/docs/ERD.png).
 - Implement cross-domain authentication using Rack-Cors.
 - Utilize Ruby on Rails with ActiveRecord as an MVC framework.
 - Write maintainable code in both the frontend and backend applications.
