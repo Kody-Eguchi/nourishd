@@ -3,6 +3,10 @@
 ![](https://github.com/Kody-Eguchi/nourishd/blob/main/docs/record.gif)
 ![](https://github.com/Kody-Eguchi/nourishd/blob/main/docs/recipe.gif)
 
+## Production URL Link
+
+[NourishD - Click Here](https://nourishd.netlify.app/)
+
 ## Applications Features
 
 - As a user, I want to be able to track my nutrient intake effectively.
@@ -102,10 +106,6 @@ To further enhance the project, we plan to implement the following improvements 
 ### Records (Mobile)
 
 ![Records Page](https://github.com/hpatel1959/nourishd/blob/main/docs/nourishd-records-mobile.png)
-
-## Production URL Link
-
-[Click Here](https://nourishd.netlify.app/)
 
 ## Developers
 
